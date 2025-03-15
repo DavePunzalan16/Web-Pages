@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Line Icons -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+    <aside>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo" style="display: block; margin: 0 auto; max-width: 150px; border-radius: 50%; transition: transform 0.3s;">
+        </div>
+        <nav class="sidebar-nav">
+            <div class="hamburger">
+                <span>☰</span>
+            </div>
+            <ul class="nav-list">
+            <li class="nav-item"><a href="#product-list-container" class="nav-link">Catalog</a></li>
+            <li class="nav-item"><a href="#favorite-section" class="nav-link">Favorites</a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#creator-section" class="nav-link">Creator</a></li>
+            <li class="nav-item"><a href="#homepage-section" class="nav-link">Homepage</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar" id="search-barJS">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+    </aside>
+    <main>
+        <header>
+            <h1>ABC Electronics - Product Catalog</h1>
+        </header>
+
+        <section id="homepage-section">
+            <img src="assets/storefront.png" alt="Storefront" class="homepage-img">
+            <h2>Welcome to My David's Technology Shop</h2>
+            <p class="homepage-description">Welcome to the ABC Electronics product catalog. This website allows you to explore a wide range of electronic devices, add your favorite products to a personalized list, and learn more about the creator behind this project. Navigate through the sections to discover more about our offerings and the purpose of this site.</p>
+            <p class="homepage-description">Our catalog provides essential needs and benefits for various users, ensuring a seamless and efficient shopping experience.</p>
+            <table class="homepage-table">
+            <thead>
+                <tr>
+                <th>Who will benefit from this?</th>
+                <th>How it contributes to society?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td class="homepage-table-description">Students</td>
+                <td class="homepage-table-description">Easy and fast access to electronic devices</td>
+                </tr>
+                <tr>
+                <td class="homepage-table-description">Workers</td>
+                <td class="homepage-table-description">Uses an online website for convenience</td>
+                </tr>
+                <tr>
+                <td class="homepage-table-description">Adults</td>
+                <td class="homepage-table-description">Provides a wide range of products</td>
+                </tr>
+                <tr>
+                <td class="homepage-table-description">Collectors</td>
+                <td class="homepage-table-description">Offers exclusive and rare items</td>
+                </tr>
+                <tr>
+                <td class="homepage-table-description">Engineers</td>
+                <td class="homepage-table-description">Access to the latest technology</td>
+                </tr>
+            </tbody>
+            </table>
+        </section>
+
+        <section id="input-section">
+            <input type="text" id="device-input" placeholder="Enter a device name">
+            <button id="add-device">Add Device</button>
+        </section>
+
+        <section class="catalog-list" id="#catalog-section container">
+            <div class="cath-list" id="product-list-container">
+            <h1 class="header">Device Catalog Instructions</h1>
+            <h2 class="subheading">Manage Your Devices and Favorites</h2>
+            <ul class="cataloghead">
+                <li class="catlist">Enter a device name in the input field under "Add Device".</li>
+                <li class="catlist">Click the "Add Device" button to add the device to the catalog.</li>
+                <li class="catlist">To add a device to your favorites, click the "Favorite" button next to the device in the catalog.</li>
+                <li class="catlist">To remove a device from your favorites, click the "Delete" button next to the device in the favorites list.</li>
+                <li class="catlist">To clear all favorites, click the "Clear All Favorites" button.</li>
+            </ul>
+            </div>
+            <div class="catalog-list" id="product-list-container">
+                <h2>Product Catalog</h2>
+                <div id="product-list" class="cataloghead"></div>
+            </div>
+            <div id="product-list" class="cataloghead"></div>
+        </section>
+
+        <section id="favorite-section container">
+            <h2>Favorite Products</h2>
+            <div id="favorite-list"></div>
+            <button id="clear-favorites">Clear All Favorites</button>
+        </section>
+
+        <section id="about-section">
+            <h2>About This Page</h2>
+            <p>This page is a product catalog for ABC Electronics. Here you can browse through various electronic devices, add them to your favorites, and manage your favorite products. The catalog is designed to be user-friendly and easy to navigate.</p>
+            <p>Our catalog includes a variety of electronic items such as smartphones, laptops, tablets, and accessories. Each product is displayed in a card format for easy viewing and selection.</p>
+            <h3>Example Products</h3>
+            <div class="table-container">
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>iPhone 13</td>
+                            <td>Smartphone</td>
+                            <td>$799</td>
+                        </tr>
+                        <tr>
+                            <td>MacBook Pro</td>
+                            <td>Laptop</td>
+                            <td>$1299</td>
+                        </tr>
+                        <tr>
+                            <td>iPad Air</td>
+                            <td>Tablet</td>
+                            <td>$599</td>
+                        </tr>
+                        <tr>
+                            <td>AirPods Pro</td>
+                            <td>Accessory</td>
+                            <td>$249</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="creator-section">
+            <h2>Creator</h2>
+            <div class="creator-card">
+            <img src="assets/dave.jpg" class="davelogo" alt="Dave Punzalan">
+            <div class="creator-info">
+                <h3>Dave Punzalan</h3>
+                <p>Dave Punzalan is a 3rd year Computer Science student dedicated to creating user-friendly and efficient web applications. With a passion for technology and innovation, Dave aims to deliver high-quality software solutions.</p>
+                <div class="social-buttons">
+                <a href="https://www.facebook.com/Davethegreat16/" class="social-link facebook">Facebook</a>
+                <a href="https://www.instagram.com/punzalan_dave/" class="social-link instagram">Instagram</a>
+                <a href="https://github.com/DavePunzalan16" class="social-link github">GitHub</a>
+                <a href="punzalanportfilioresponsive.infinityfreeapp.com" class="social-link portfolio">Portfolio</a>
+                </div>
+            </div>
+            </div>
+            <div class="creator-details no-border">
+            <div class="table-row">
+                <div class="table-cell">
+                <h3>About Me</h3>
+                <ul>
+                    <li>3rd year Computer Science </li>
+                    <li>21 years old</li>
+                    <li>Web Developer</li>
+                    <li>Manga and Comic Reader</li>
+                </ul>
+                </div>
+                <div class="table-cell">
+                <h3>My Positions</h3>
+                <ul>
+                    <li>VP External Acss</li>
+                    <li>ENSC Committee</li>
+                    <li>LAMPS Secretary Committee</li>
+                    <li>Game Dev Associate</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
