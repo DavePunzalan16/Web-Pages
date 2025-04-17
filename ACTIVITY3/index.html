@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerald Tasks | Minimalist TODO List</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="fas fa-check-square"></i> Emerald Tasks</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" title="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#todo">Tasks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#history">History</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tutorial">Tutorial</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#creator">Creator</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="hero" class="text-center py-5">
+            <h1 class="display-4">Organize Your Day with Emerald Tasks</h1>
+            <p class="lead">A minimalist approach to productivity and task management</p>
+        </section>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <section id="todo" class="card-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-tasks"></i> Manage Tasks</h2>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" id="taskInput" class="form-control" placeholder="Enter your task here...">
+                        <button id="addTask" class="btn btn-add"><i class="fas fa-plus"></i> Add</button>
+                    </div>
+                    <div class="task-controls mb-3">
+                        <button id="clearCompleted" class="btn btn-sm btn-outline"><i class="fas fa-broom"></i> Clear Completed</button>
+                        <label for="taskFilter" class="form-label">Filter Tasks</label>
+                        <select id="taskFilter" class="form-select form-select-sm">
+                            <option value="all">All Tasks</option>
+                            <option value="active">Active</option>
+                            <option value="completed">Completed</option>
+                        </select>
+                    </div>
+                    <ul id="taskList" class="task-list"></ul>
+                </section>
+
+                <section id="tutorial" class="card-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-book"></i> How To Use</h2>
+                    </div>
+                    <div class="tutorial-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Enter a Task</h4>
+                                <p>Type your task in the input field and click "Add" or press Enter.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Manage Tasks</h4>
+                                <p>Edit, complete, or delete tasks using the action buttons.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Track History</h4>
+                                <p>View your task management history in the History section.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-lg-6">
+                <section id="history" class="card-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-history"></i> Task History</h2>
+                    </div>
+                    <div class="history-container">
+                        <ul id="historyList" class="history-list"></ul>
+                    </div>
+                    <button id="clearHistory" class="btn btn-outline mt-3"><i class="fas fa-trash"></i> Clear History</button>
+                </section>
+
+                <section id="about" class="card-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-info-circle"></i> About</h2>
+                    </div>
+                    <p>Emerald Tasks is a minimalist TODO list application designed for efficiency and focus. The elegant dark green gradient theme provides a calm and productive environment to manage your daily tasks.</p>
+                    <p>Features include task tracking, history logging, and intuitive management tools to help you stay organized.</p>
+                </section>
+            </div>
+        </div>
+
+        <section id="creator" class="card-section creator-section">
+            <div class="section-header">
+                <h2><i class="fas fa-user-circle"></i> Creator</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="creator-avatar">
+                        <img src="assets/dave.jpg" alt="Creator Avatar" class="rounded-full border-4 border-green-500 w-32 h-32 object-cover">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="creator-info">
+                        <h3>Dave Matthew S. Punzalan</h3>
+                        <p class="creator-title">3rd Year Computer Science Student | UE CAL</p>
+                        <div class="creator-roles">
+                            <span class="role"><i class="fas fa-users"></i> VP External at ACSS</span>
+                            <span class="role"><i class="fas fa-book"></i> Committee Secretary at LAMPS</span>
+                            <span class="role"><i class="fas fa-gamepad"></i> Associate Game Dev Lead at GDSC</span>
+                            <span class="role"><i class="fas fa-palette"></i> Creative Committee at ENSC</span>
+                        </div>
+                        <div class="creator-social">
+                            <a href="https://github.com/DavePunzalan16" class="social-icon" title="GitHub Profile"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/davematthewpunzalan/" class="social-icon" title="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="card-section">
+            <div class="section-header">
+                <h2><i class="fas fa-envelope"></i> Contact</h2>
+            </div>
+            <form id="contactForm">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="text-center py-4 mt-5">
+        <div class="container">
+            <p>Emerald Tasks &copy; 2025 | Designed by Dave Matthew S. Punzalan</p>
+            <div class="footer-links">
+                <a href="#todo">Tasks</a>
+                <a href="#history">History</a>
+                <a href="#about">About</a>
+                <a href="#creator">Creator</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
