@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave M. S. Punzalan | Web Developer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff6b6b',
+                        secondary: '#6c757d',
+                        dark: '#121212',
+                        darker: '#0a0a0a',
+                        light: '#f8f9fa'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="dark bg-gray-900 text-white">
+    <!-- Fixed Navbar HTML -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-gray-800 fixed-top shadow-lg">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="#">Dave.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#organizations">Organizations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item ms-2">
+                    <button id="theme-toggle" class="btn btn-outline-light btn-sm rounded-circle" title="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Home/Hero Section -->
+    <section id="home" class="hero-section min-h-screen flex items-center bg-gray-900">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <span class="text-primary fw-bold">Hello, I'm</span>
+                    <h1 class="display-3 fw-bold mb-3">Dave Matthew S. Punzalan</h1>
+                    <h2 class="fs-4 text-gray-400 mb-4">Junior Web Developer | 3rd Year BS Computer Science Student</h2>
+                    <p class="lead mb-5">
+                        I specialize in front-end and web design with expertise in HTML, CSS, JavaScript, Bootstrap and TailwindCSS, creating visually appealing and user-friendly websites.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#projects" class="btn btn-primary px-4 py-2">See My Work</a>
+                        <a href="#contact" class="btn btn-outline-light px-4 py-2">Hire Me</a>
+                    </div>
+                    <div class="mt-5 social-icons">
+                        <a href="https://instagram.com/" class="me-3 fs-4" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/" class="me-3 fs-4" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/" class="me-3 fs-4"  title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/" class="me-3 fs-4" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-img-container">
+                        <img src="assets/dave.jpg" alt="Dave Punzalan" class="hero-img img-fluid rounded-circle">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down text-center mt-5">
+                <a href="#about" class="text-white">
+                    <p>Scroll Down</p>
+                    <i class="fas fa-chevron-down bounce"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-gray-800">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="about-img-container">
+                        <img src="assets/dave.jpg" alt="Dave Punzalan" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="lead mb-4">
+                        I'm a third-year Computer Science student with a passion for web development.
+                    </p>
+                    <p class="mb-4">
+                        Hi, I'm Dave! I'm passionate about front-end and web design and have been developing my skills in HTML, CSS, JavaScript, PHP, and Python. Currently, I'm studying at University of the East pursuing a BS in Computer Science with an expected graduation in 2026.
+                    </p>
+                    <p class="mb-4">
+                        I enjoy creating visually appealing and user-friendly websites that deliver a seamless experience. My goal is to continue expanding my knowledge in both front-end and back-end development to become a well-rounded full-stack developer.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <h6><i class="fas fa-envelope me-2 text-primary"></i> Email:</h6>
+                            <p>dave16punzalan@gmail.com</p>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h6><i class="fas fa-phone me-2 text-primary"></i> Phone:</h6>
+                            <p>+63 905-841-2887</p>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h6><i class="fas fa-map-marker-alt me-2 text-primary"></i> Location:</h6>
+                            <p>Caloocan City, Philippines</p>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h6><i class="fas fa-globe me-2 text-primary"></i> Website:</h6>
+                            <p>http://punzalanportfilioresponsive.infinityfreeapp.com/?i=1</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="assets/PunzalanResumeJrFrontEndDevIntern.pdf" class="btn btn-primary px-4 py-2">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 bg-gray-900">
+        <div class="container py-5">
+            <h2 class="section-title text-center mb-5">
+                <i class="fas fa-graduation-cap me-2 text-primary"></i> Education
+            </h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>BS Computer Science</h4>
+                                <h6>University of the East, Quezon City</h6>
+                                <p class="text-gray-400">2022 - 2026 (Expected)</p>
+                                <p>Currently pursuing a Bachelor of Science in Computer Science with a focus on web development and software engineering.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>High School and SHS</h4>
+                                <h6>College of St. Catherine Quezon City</h6>
+                                <p class="text-gray-400">2016 - 2022</p>
+                                <p>Completed secondary education with honor roll recognition and participation in various programming competitions.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>Elementary</h4>
+                                <h6>St. Dominic Savio School Kalookan City</h6>
+                                <p class="text-gray-400">2010 - 2016</p>
+                                <p>Completed primary education with consistent academic excellence and early introduction to computer science concepts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-gray-800">
+        <div class="container py-5">
+            <h2 class="section-title text-center mb-5">
+                <i class="fas fa-tools me-2 text-primary"></i> Skills & Tech Stack
+            </h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="skill-card">
+                        <h4><i class="fas fa-code me-2 text-primary"></i> Front-End Dev</h4>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> HTML5</li>
+                            <li><i class="fas fa-check-circle"></i> CSS3</li>
+                            <li><i class="fas fa-check-circle"></i> JavaScript</li>
+                            <li><i class="fas fa-check-circle"></i> Bootstrap</li>
+                            <li><i class="fas fa-check-circle"></i> Tailwind CSS</li>
+                            <li><i class="fas fa-check-circle"></i> React.js</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="skill-card">
+                        <h4><i class="fas fa-database me-2 text-primary"></i> Back-End Dev</h4>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> PHP</li>
+                            <li><i class="fas fa-check-circle"></i> Python</li>
+                            <li><i class="fas fa-check-circle"></i> Node.js</li>
+                            <li><i class="fas fa-check-circle"></i> MySQL</li>
+                            <li><i class="fas fa-check-circle"></i> MongoDB</li>
+                            <li><i class="fas fa-check-circle"></i> Express.js</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="skill-card">
+                        <h4><i class="fas fa-pencil-ruler me-2 text-primary"></i> UI/UX Design</h4>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Figma</li>
+                            <li><i class="fas fa-check-circle"></i> Adobe XD</li>
+                            <li><i class="fas fa-check-circle"></i> Canva</li>
+                            <li><i class="fas fa-check-circle"></i> Responsive Design</li>
+                            <li><i class="fas fa-check-circle"></i> Wireframing</li>
+                            <li><i class="fas fa-check-circle"></i> Prototyping</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="skill-card">
+                        <h4><i class="fas fa-toolbox me-2 text-primary"></i> Tools & Others</h4>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Git & GitHub</li>
+                            <li><i class="fas fa-check-circle"></i> VS Code</li>
+                            <li><i class="fas fa-check-circle"></i> Terminal</li>
+                            <li><i class="fas fa-check-circle"></i> Agile Methodology</li>
+                            <li><i class="fas fa-check-circle"></i> Team Leadership</li>
+                            <li><i class="fas fa-check-circle"></i> Problem Solving</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-gray-900">
+        <div class="container py-5">
+            <h2 class="section-title text-center mb-5">
+                <i class="fas fa-project-diagram me-2 text-primary"></i> My Projects
+            </h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/PORT1.png" alt="Personal Website" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <a href="http://punzalanportfilioresponsive.infinityfreeapp.com/?i=1" class="text-primary text-lg font-semibold hover:underline">
+                                Personal Website v1.0
+                            </a>
+                            <p class="tech-stack">HTML, CSS, JavaScript, Bootstrap</p>
+                            <p class="project-desc">
+                                A personal portfolio website built from scratch using HTML, CSS, JavaScript, and Bootstrap that showcases my skills and projects.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-outline-primary"><i class="fas fa-globe me-2"></i>Live Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-light"><i class="fab fa-github me-2"></i>GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/port2.png" alt="Netflix Clone" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Personal Website v2.0</h4>
+                            <p class="tech-stack">HTML, CSS, JavaScript, React.js</p>
+                            <p class="project-desc">
+                                A full-featured Netflix clone built with React.js, featuring modern UI/UX design principles and responsive layout.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-outline-primary"><i class="fas fa-globe me-2"></i>Live Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-light"><i class="fab fa-github me-2"></i>GitHub</a>
+                            </div>
+                        </div>
+                    </div>e
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/emerald.png" alt="To-Do List App" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>To-Do List App</h4>
+                            <p class="tech-stack">HTML, CSS, JavaScript, Local Storage</p>
+                            <p class="project-desc">
+                                A simple yet effective to-do list application with local storage functionality to save tasks between sessions.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-outline-primary"><i class="fas fa-globe me-2"></i>Live Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-light"><i class="fab fa-github me-2"></i>GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/Valo.jpg" alt="E-commerce Website" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Valorant E-commerce Website</h4>
+                            <p class="tech-stack">Bootstrap, TailwindCSS, ReactJS</p>
+                            <p class="project-desc">
+                                A full-featured Valorant e-commerce platform with user authentication, product listings, cart functionality, and dashboard.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-outline-primary"><i class="fas fa-globe me-2"></i>Live Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-light"><i class="fab fa-github me-2"></i>GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/weather.png" alt="Weather App" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Weather App</h4>
+                            <p class="tech-stack">HTML, CSS, JavaScript, API Integration</p>
+                            <p class="project-desc">
+                                A weather application that fetches real-time weather data from an API and displays it in a user-friendly interface.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-outline-primary"><i class="fas fa-globe me-2"></i>Live Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-light"><i class="fab fa-github me-2"></i>GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/abc.png" alt="Recipe Finder" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>ABC ELECTRONIC SHOP</h4>
+                            <p class="tech-stack">JS, Tailwind CSS, Html/CSS</p>
+                            <p class="project-desc">
+                                An e-commerce platform where users can browse electronic items, add them to their cart, mark items as favorites, and remove items. The platform includes a user-friendly interface, secure checkout process, and a detailed guide for managing items in the cart and favorites list.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-outline-primary"><i class="fas fa-globe me-2"></i>Live Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-light"><i class="fab fa-github me-2"></i>GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section HTML -->
+<section id="experience" class="py-5 bg-gray-800">
+    <div class="container py-5">
+        <h2 class="section-title text-center mb-5">
+            <i class="fas fa-briefcase me-2 text-primary"></i> Experience
+        </h2>
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="experience-grid">
+                    <div class="experience-card animation-delay-1">
+                        <div class="graphic"></div>
+                        <div class="icon"><i class="fas fa-paint-brush"></i></div>
+                        <h4>Web Designer</h4>
+                        <h6>Freelance</h6>
+                        <p class="text-gray-400">2020 - Present</p>
+                        <p>Started designing websites while in high school, focusing on creative designs, layouts, and improving UX/UI for clients.</p>
+                    </div>
+                    <div class="experience-card animation-delay-2">
+                        <div class="graphic"></div>
+                        <div class="icon"><i class="fas fa-code"></i></div>
+                        <h4>Front-End Developer</h4>
+                        <h6>Internship</h6>
+                        <p class="text-gray-400">2022 - Present</p>
+                        <p>Skilled in converting designs into fully-functional websites with HTML, CSS, JavaScript, and responsive web development.</p>
+                    </div>
+                    <div class="experience-card experience-card-delay-3">
+                        <div class="graphic"></div>
+                        <div class="icon"><i class="fas fa-database"></i></div>
+                        <h4>Back-End Developer</h4>
+                        <h6>Internship</h6>
+                        <p class="text-gray-400">2022 - Present</p>
+                        <p>Working with PHP and Node.js to develop server-side applications, RESTful APIs, and backend integrations.</p>
+                    </div>
+                    <div class="experience-card animation-delay-4">
+                        <div class="graphic"></div>
+                        <div class="icon"><i class="fas fa-users-cog"></i></div>
+                        <h4>Organization Officer</h4>
+                        <h6>ACSS</h6>
+                        <p class="text-gray-400">2023 - 2024</p>
+                        <p>Vice President of the Association of Computer Science Students, organizing tech events and workshops.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Organizations Section -->
+    <section id="organizations" class="py-5 bg-gray-900">
+        <div class="container py-5">
+            <h2 class="section-title text-center mb-5">
+                <i class="fas fa-users-cog me-2 text-primary"></i> Organizations & Leadership
+            </h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="org-card">
+                        <div class="org-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Association of Computer Science Students (ACSS)</h4>
+                        <h6>Vice President (2024-2025)</h6>
+                        <p>
+                            Led the organization in planning and executing tech events, workshops, and seminars for Computer Science students. Coordinated with faculty and external partners for academic enrichment activities.
+                        </p>
+                        <hr class="border-t-2 border-gray-600 my-4">
+                        <h6>President (2025-2026)</h6>
+                        <p>
+                            Organized and led various tech events, workshops, and seminars for Computer Science students. Collaborated with faculty and external partners to enhance academic enrichment activities. make several seminars and events.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="org-card">
+                        <div class="org-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>Google Developer Student Clubs (GDSC)</h4>
+                        <h6>Core Team Member (2022-2024)</h6>
+                        <p>
+                            Organized and facilitated workshops on web development, mobile app development, and other Google technologies for university students.
+                        </p>
+                        <hr class="border-t-2 border-gray-600 my-4">
+                        <h6>Assocate Game Developer Lead (2024-2025)</h6>
+                        <p>
+                            Led a team of developers in creating a mobile and web game application using Unity , microstudio , Godot 4and C#. Collaborated with designers to ensure a seamless user experience and engaging gameplay.
+                            and make an seminar events.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="org-card">
+                        <div class="org-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Engineering Student Council (ENSC)</h4>
+                        <h6>Creative Committee (2023-2024)</h6>
+                        <p>
+                            Led website design and digital materials creation for the council's events and initiatives. Managed a team of designers to ensure consistent branding across all platforms.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="org-card">
+                        <div class="org-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Lakas Mag-Aral ng Pamantasan ng Silangan (LAMPS)</h4>
+                        <h6>Committee Secretary (2022-2023)</h6>
+                        <p>
+                            Participated in organizing academic competitions and tutorial sessions in math and science for fellow students.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-5 bg-gray-800">
+        <div class="container py-5">
+            <h2 class="section-title text-center mb-5">
+                <i class="fas fa-blog me-2 text-primary"></i> Blog & Articles
+            </h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="assets/blog1.webp" alt="Blog Post 1" class="img-fluid">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date">April 2, 2025</span>
+                            <h4>Getting Started with React: A Beginner's Guide</h4>
+                            <p>
+                                Learn the fundamentals of React.js and how to build your first interactive web application using this popular JavaScript library.
+                            </p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="assets/blog2.webp" alt="Blog Post 2" class="img-fluid">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date">March 15, 2025</span>
+                            <h4>Responsive Design: Tips and Tricks</h4>
+                            <p>
+                                Explore essential techniques for creating websites that look great on all devices, from smartphones to desktop screens.
+                            </p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="assets/blog3.webp" alt="Blog Post 3" class="img-fluid">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date">February 28, 2025</span>
+                            <h4>The Power of Tailwind CSS</h4>
+                            <p>
+                                Discover how Tailwind CSS can revolutionize your frontend development workflow and speed up your projects.
+                            </p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-gray-900">
+        <div class="container py-5">
+            <h2 class="section-title text-center mb-5">
+                <i class="fas fa-comments me-2 text-primary"></i> Testimonials
+            </h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-card text-center">
+                                    <div class="testimonial-img">
+                                        <img src="assets/rabbit.webp" alt="Testimonial 1" class="rounded-circle">
+                                    </div>
+                                    <p class="testimonial-text">
+                                        "Dave is an exceptional web developer with a keen eye for design. His ability to translate requirements into functional and beautiful websites is remarkable."
+                                    </p>
+                                    <h5>Prof. Maria Santos</h5>
+                                    <p class="text-gray-400">Computer Science Department</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card text-center">
+                                    <div class="testimonial-img">
+                                        <img src="assets/rabbit2.webp" alt="Testimonial 2" class="rounded-circle">
+                                    </div>
+                                    <p class="testimonial-text">
+                                        "Working with Dave on our organization's website was a pleasure. He's attentive to details, responsive to feedback, and delivers high-quality work ahead of schedule."
+                                    </p>
+                                    <h5>John Dela Cruz</h5>
+                                    <p class="text-gray-400">ACSS President</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card text-center">
+                                      <div class="testimonial-img">
+                                          <img src="assets/rabbit3.webp" alt="Testimonial 3" class="rounded-circle">
+                                      </div>
+                                      <p class="testimonial-text">
+                                          "Dave's technical skills and creativity shined through in our collaborative projects. He has a natural talent for problem-solving and creating intuitive user experiences."
+                                      </p>
+                                      <h5>Anna Reyes</h5>
+                                      <p class="text-gray-400">Freelance UI/UX Designer</p>
+                              </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+      <!-- FAQ Section -->
+      <section id="faq" class="py-5 bg-gray-800">
+          <div class="container py-5">
+              <h2 class="section-title text-center mb-5">
+                  <i class="fas fa-question-circle me-2 text-primary"></i> Frequently Asked Questions
+              </h2>
+              <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                      <div class="accordion" id="faqAccordion">
+                          <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                      What's your preferred tech stack?
+                                  </button>
+                              </h2>
+                              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                  <div class="accordion-body">
+                                      For front-end development, I prefer using React.js with Tailwind CSS for styling. On the back-end, I'm comfortable with Node.js and Express for building APIs, along with MongoDB or MySQL for database management. However, I'm flexible and can adapt to different technologies based on project requirements.
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                      Are you available for freelance work?
+                                  </button>
+                              </h2>
+                              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                  <div class="accordion-body">
+                                      Yes, I'm open to freelance opportunities that align with my skills and schedule. I can work on website development, UI/UX design, and web application projects. Feel free to contact me with project details, and we can discuss timelines and requirements.
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                      How do you approach learning new technologies?
+                                  </button>
+                              </h2>
+                              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                  <div class="accordion-body">
+                                      I believe in hands-on learning. When approaching a new technology, I start by understanding its core concepts through documentation and tutorials. Then, I build small projects to apply what I've learned. I'm also active in developer communities and regularly participate in hackathons to expand my skillset and solve real-world problems.
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                      Can you work remotely?
+                                  </button>
+                              </h2>
+                              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                  <div class="accordion-body">
+                                      Absolutely! I have experience working remotely and am comfortable with virtual collaboration tools like Slack, Zoom, Trello, and GitHub. I value clear communication and regular updates to ensure project success, regardless of physical location.
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+      <!-- Contact Section -->
+      <section id="contact" class="py-5 bg-gray-900">
+          <div class="container py-5">
+              <h2 class="section-title text-center mb-5">
+                  <i class="fas fa-envelope me-2 text-primary"></i> Get In Touch
+              </h2>
+              <div class="row">
+                  <div class="col-lg-5 mb-4 mb-lg-0">
+                      <div class="contact-info">
+                          <h4 class="mb-4"><i class="fas fa-address-book me-2 text-primary"></i> Contact Information</h4>
+                          <p class="mb-3">
+                              I'm interested in freelance opportunities – especially ambitious or large projects. However, if you have other requests or questions, don't hesitate to contact me.
+                          </p>
+                          <div class="mt-5">
+                              <div class="contact-item mb-3">
+                                  <i class="fas fa-map-marker-alt me-3 text-primary"></i>
+                                  <span>Quezon City, Philippines</span>
+                              </div>
+                              <div class="contact-item mb-3">
+                                  <i class="fas fa-envelope me-3 text-primary"></i>
+                                  <span>davidpunzalan@gmail.com</span>
+                              </div>
+                              <div class="contact-item mb-3">
+                                  <i class="fas fa-phone me-3 text-primary"></i>
+                                  <span>+63 991-281-2867</span>
+                              </div>
+                          </div>
+                          <div class="social-icons mt-4">
+                              <a href="#" class="me-3 fs-4" title="Instagram"><i class="fab fa-instagram"></i></a>
+                              <a href="#" class="me-3 fs-4" title="Facebook"><i class="fab fa-facebook"></i></a>
+                              <a href="#" class="me-3 fs-4" title="Twitter"><i class="fab fa-twitter"></i></a>
+                              <a href="#" class="me-3 fs-4" title="GitHub"><i class="fab fa-github"></i></a>
+                              <a href="#" class="me-3 fs-4" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-7">
+                      <form class="contact-form">
+                          <div class="row">
+                              <div class="col-md-6 mb-3">
+                                  <div class="form-group">
+                                      <label for="name" class="form-label">Name</label>
+                                      <input type="text" id="name" class="form-control" placeholder="Your Name">
+                                  </div>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                  <div class="form-group">
+                                      <label for="email" class="form-label">Email</label>
+                                      <input type="email" id="email" class="form-control" placeholder="Your Email">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="mb-3">
+                              <div class="form-group">
+                                  <label for="subject" class="form-label">Subject</label>
+                                  <input type="text" id="subject" class="form-control" placeholder="Subject">
+                              </div>
+                          </div>
+                          <div class="mb-4">
+                              <div class="form-group">
+                                  <label for="message" class="form-label">Message</label>
+                                  <textarea id="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
+                              </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary px-4 py-2">Send Message</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+      <!-- Newsletter Section -->
+      <section id="newsletter" class="py-5 bg-gray-800">
+          <div class="container py-5">
+              <div class="row justify-content-center">
+                  <div class="col-lg-8 text-center">
+                      <h2 class="mb-4">Add me on My Socials</h2>
+                      <p class="mb-5">Stay updated with my latest projects, articles, and tech insights.</p>
+                      <form class="newsletter-form">
+                          <div class="input-group">
+                              <input type="email" class="form-control" placeholder="Your Email Address">
+                              <button type="submit" class="btn btn-primary">Subscribe</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+      <!-- Footer -->
+      <footer class="py-4 bg-gray-900">
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                      <p class="mb-0">&copy; 2025 Dave Matthew S. Punzalan. All rights reserved.</p>
+                  </div>
+                  <div class="col-md-6 text-center text-md-end">
+                      <div class="social-icons">
+                          <a href="#" class="me-3" title="Instagram"><i class="fab fa-instagram"></i></a>
+                          <a href="#" class="me-3" title="Facebook"><i class="fab fa-facebook"></i></a>
+                          <a href="#" class="me-3" title="Twitter"><i class="fab fa-twitter"></i></a>
+                          <a href="#" class="me-3" title="Github"><i class="fab fa-github"></i></a>
+                          <a href="#" class="me-3" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  
+      <!-- Scroll to Top Button -->
+      <button id="scrollToTop" class="btn btn-primary rounded-circle shadow-lg" title="Scroll to top">
+          <i class="fas fa-arrow-up"></i>
+      </button>
+  
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Custom JS -->
+      <script src="script.js"></script>
+  </body>
+  </html>
